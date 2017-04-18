@@ -11,5 +11,17 @@ class PrimeNumberTestCases(unittest.TestCase):
         result = generate_prime_numbers(9)
         self.assertEqual(type(result), list, msg='Invalid output')
 
+    def test_for_not_allowing_non_integer(self):
+        with self.assertRaises(ValueError) as context:
+            generate_prime_numbers('string')
+            self.assertEqual(
+                "The provided input is not an integer.",
+                context.exception.message, "Invalid input not allowed"
+            )
+
+    def test_for_negative_values(self):
+        result = generate_prime_numbers(-3)
+        self.assertEqual(result, [], msg='It should return an empty list for negative times.')
+
 
 if __name__ == '__main__': unittest.main()
