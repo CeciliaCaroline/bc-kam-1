@@ -23,5 +23,13 @@ class PrimeNumberTestCases(unittest.TestCase):
         result = generate_prime_numbers(-3)
         self.assertEqual(result, [], msg='It should return an empty list for negative times.')
 
+    def test_for_when_no_variable_is_passed(self):
+        with self.assertRaises(ValueError) as context:
+            generate_prime_numbers()
+            self.assertEqual(
+                "Provide an integer.",
+                context.exception.message, "Invalid input not allowed"
+            )
+
 
 if __name__ == '__main__': unittest.main()
