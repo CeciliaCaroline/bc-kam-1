@@ -1,4 +1,4 @@
-#Asymptotic Analysis
+# Asymptotic Analysis
 
 
 The asymptotic analysis for the prime number generator is *O(N^2)*. It is because the function makes use
