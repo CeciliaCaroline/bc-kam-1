@@ -1,6 +1,6 @@
 import unittest
 
-from prime import generate_prime_numbers
+from Day1.prime import generate_prime_numbers
 
 
 class PrimeNumberTestCases(unittest.TestCase):
