@@ -1,4 +1,5 @@
 import unittest
+
 from prime import generate_prime_numbers
 
 
