@@ -1,8 +1,10 @@
 #Weather Command line application
 
+
 This is a simple weather application that shows today`s weather
 when a city name is entered at the prompt.
 
+The application uses the Open Weather Maps Api (https://openweathermap.org/)
 The application shows the temperature, humidity, pressure and wind speed
 of the weather at a given city in the world.
 
